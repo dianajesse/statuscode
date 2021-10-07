@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:0.5px solid black;
+}
+</style>
+<body>
+
+<h2>DomainName and StatusCode</h2>
+
+<table style="width:100%">
+
+<thead>
+    <tr>
+      <th>DomainName</th>
+      <th>StatusCode</th>
+      <th>RequestTime</th>
+    </tr>
+  </thead>
+    <tbody>
+      <% mylist.forEach((record) => { %>
+    <tr>
+      <td><%= record.DomainName %></td>
+      <td><%= record.statuscode %></td>
+      <td><%= record.time %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+  
+</body>
+</html>
